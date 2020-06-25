@@ -214,7 +214,7 @@ export default {
             this.details.amount * Math.pow(10, asset_detail.denomination)
           );
           let friendsAddress = this.wallet.public_key;
-          let unsignedTx = await this.$ava.makeBaseTx(
+          let unsignedTx = await this.$ava.buildBaseTx(
             utxos,
             sendAmount,
             [friendsAddress],

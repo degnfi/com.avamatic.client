@@ -78,7 +78,7 @@ export default {
           this.amount * Math.pow(10, this.asset.denomination)
         );
         let friendsAddress = this.destination;
-        let unsignedTx = await this.$ava.makeBaseTx(
+        let unsignedTx = await this.$ava.buildBaseTx(
           utxos,
           sendAmount,
           [friendsAddress],

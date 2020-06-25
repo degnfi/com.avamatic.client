@@ -89,7 +89,7 @@
 
 <script>
 import CryptoJS from "crypto-js";
-import * as slopes from "slopes";
+const avalanche = require("avalanche");
 
 export default {
   data() {
@@ -101,16 +101,7 @@ export default {
     };
   },
   created() {
-    let myNetworkID = 2; //default is 2, we want to override that for our local network
-    let myBlockchainID = "X"; // The AVM blockchainID on this network
-    let ava = new slopes.Slopes(
-      "bootstrap.ava.network",
-      21000,
-      "https",
-      myNetworkID,
-      myBlockchainID
-    );
-    this.avm = ava.AVM();
+    this.avm = this.$ava
   },
   methods: {
     login() {
@@ -124,7 +115,7 @@ export default {
           this.$localStorage.set("is_logged", true);
           let keychain = this.avm.keyChain();
 
-          let bintools = slopes.BinTools.getInstance();
+          let bintools = avalanche.BinTools.getInstance();
 
           let mypk = bintools.avaDeserialize(JSON.parse(secret).secret_key);
           let addr = keychain.importKey(mypk);

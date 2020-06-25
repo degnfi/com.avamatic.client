@@ -44,7 +44,6 @@
 
 <script>
 import BN from "bn.js";
-const slopes = require("slopes");
 import EventBus from "@/event_bus";
 
 export default {

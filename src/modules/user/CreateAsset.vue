@@ -170,7 +170,6 @@
 </template>
 
 <script>
-const slopes = require("slopes");
 import BN from "bn.js";
 
 export default {

@@ -111,6 +111,10 @@ export default {
       vm.fetch_account();
     });
 
+    EventBus.$on("logout", function() {
+      vm.logout();
+    });
+
     if (this.$store.getters.SEND_LOGGED_IN) {
       this.fetch_account();
 

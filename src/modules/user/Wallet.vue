@@ -194,6 +194,7 @@ export default {
             this.native_asset.asset = asset.asset;
             this.native_asset.symbol = asset.asset;
             this.native_asset.balance = asset.balance / Math.pow(10, 9);
+            this.native_asset.denomination = 9
             assets.splice(index, index);
           } else {
             this.$ava.getAssetDescription(asset.asset).then((asset_detail) => {

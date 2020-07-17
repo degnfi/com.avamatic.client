@@ -32,8 +32,12 @@
           <tbody class="list">
             <tr v-for="order in orders">
               <td>
-                <router-link :to="'/orders/'+order._id" class="text-secondary" style="font-size:15px">
-                  {{order._id}}
+                <router-link
+                  :to="'/orders/' + order._id"
+                  class="text-secondary"
+                  style="font-size:15px"
+                >
+                  {{ order._id }}
                 </router-link>
               </td>
               <td>
@@ -78,6 +82,7 @@
 </template>
 
 <script>
+import EventBus from "@/event_bus";
 import BN from "bn.js";
 
 export default {
@@ -97,9 +102,14 @@ export default {
           Authorization: "Bearer " + this.$store.getters.SEND_TOKEN,
         },
       };
-      this.axios.get("/orders", axiosConfig).then((response) => {
-        this.orders = response.data;
-      });
+      this.axios
+        .get("/orders", axiosConfig)
+        .then((response) => {
+          this.orders = response.data;
+        })
+        .catch((err) => {
+          EventBus.$emit("logout");
+        });
     },
   },
 };

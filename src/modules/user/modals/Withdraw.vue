@@ -74,9 +74,14 @@ export default {
         if (this.asset.asset == "AVA") {
           assetid = "21d7KVtPrubc5fHr6CGNcgbUb4seUjmZKr35ZX7BZb5iP8pXWA";
         }
+        console.log(this.asset.denomination)
+        console.log(this.amount)
         let sendAmount = new BN(
           this.amount * Math.pow(10, this.asset.denomination)
         );
+
+        console.log(sendAmount)
+
         let friendsAddress = this.destination;
         let unsignedTx = await this.$ava.buildBaseTx(
           utxos,

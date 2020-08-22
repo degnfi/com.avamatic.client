@@ -8,7 +8,7 @@
           style="font-size:35px"
         >
           <span class="text-center"
-            ><i class="fad fa-spinner"></i> Avamatic</span
+            ><i class="fad fa-spinner"></i> Avaxchain</span
           >
         </router-link>
         <div class="row justify-content-center mb-5">
@@ -117,7 +117,7 @@
 </template>
 
 <script>
-import AvaHDWallet from "ava-hd-wallet";
+import AvaxHDWallet from "avax-hd-wallet";
 
 export default {
   data() {
@@ -128,7 +128,7 @@ export default {
   },
   methods: {
     generate_wallet(mnemonic) {
-      const wallet = AvaHDWallet.fromMnemonic(mnemonic);
+      const wallet = AvaxHDWallet.fromMnemonic(mnemonic);
 
       this.wallet = {
         public_key: wallet.publicKey,

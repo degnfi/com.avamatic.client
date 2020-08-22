@@ -5,7 +5,7 @@
       class="logo d-none d-sm-block text-center text-white"
       style="font-size:35px"
     >
-      <span class="text-center"><i class="fad fa-spinner"></i> Avamatic</span>
+      <span class="text-center"><i class="fad fa-spinner"></i> Avaxchain</span>
     </router-link>
     <div class="card card-body align-center col-md-6">
       <div class="row align-items-center mb-5">
@@ -40,7 +40,7 @@
       <Summary v-else-if="step == 0" />
       <Pay v-else-if="step == 1" />
       <hr />
-      <p class="text-center">Payments processed by <b>Avamatic</b></p>
+      <p class="text-center">Payments processed by <b>Avaxchain</b></p>
     </div>
   </div>
 </template>

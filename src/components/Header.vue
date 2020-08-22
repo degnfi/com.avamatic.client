@@ -126,7 +126,7 @@ export default {
   methods: {
     fetch_account() {
       var wallet = JSON.parse(this.$store.getters.SEND_WALLET);
-      this.$ava
+      this.$avax
         .getBalance(
           wallet.public_key,
           "21d7KVtPrubc5fHr6CGNcgbUb4seUjmZKr35ZX7BZb5iP8pXWA"

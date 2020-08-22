@@ -8,7 +8,7 @@
           style="font-size:35px"
         >
           <span class="text-center"
-            ><i class="fad fa-spinner"></i> Avamatic</span
+            ><i class="fad fa-spinner"></i> Avaxchain</span
           >
         </router-link>
         <div class="row justify-content-center mb-5">
@@ -18,7 +18,7 @@
                 <div class="mb-3">
                   <h6 class="h3">Create account</h6>
                   <p class="text-muted mb-0">
-                    Have an account and unlock access to the entire AVA network
+                    Have an account and unlock access to the entire AVAX network
                   </p>
                 </div>
                 <div
@@ -167,7 +167,7 @@
 
 <script>
 import CryptoJS from "crypto-js";
-import AvaHDWallet from "ava-hd-wallet";
+import AvaxHDWallet from "avax-hd-wallet";
 import { v4 as uuidv4 } from "uuid";
 const avalanche = require("avalanche");
 
@@ -186,15 +186,15 @@ export default {
     };
   },
   created() {
-    this.avm = this.$ava
+    this.avm = this.$avax
 
     this.username = uuidv4();
     this.generate_wallet();
   },
   methods: {
     generate_wallet() {
-      this.mnemonic = AvaHDWallet.generateMnemonic(); // -> "nation profit giant truth meat carpet demand expect nest sudden endorse ahead"
-      const wallet = AvaHDWallet.fromMnemonic(this.mnemonic);
+      this.mnemonic = AvaxHDWallet.generateMnemonic(); // -> "nation profit giant truth meat carpet demand expect nest sudden endorse ahead"
+      const wallet = AvaxHDWallet.fromMnemonic(this.mnemonic);
 
       let keychain = this.avm.keyChain();
 

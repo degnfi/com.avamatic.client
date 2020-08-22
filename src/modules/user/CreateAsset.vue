@@ -189,7 +189,7 @@ export default {
   },
   methods: {
     async create_asset() {
-      this.$ava
+      this.$avax
         .createFixedCapAsset(
           null,
           null,

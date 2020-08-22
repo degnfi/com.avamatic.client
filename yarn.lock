@@ -1466,9 +1466,9 @@ autoprefixer@^9.5.1:
     postcss "^7.0.30"
     postcss-value-parser "^4.1.0"
 
-ava-hd-wallet@^1.0.9:
+avax-hd-wallet@^1.0.9:
   version "1.0.9"
-  resolved "https://registry.yarnpkg.com/ava-hd-wallet/-/ava-hd-wallet-1.0.9.tgz#57054fb06b028ad9cd632a6faa68c99050c78a8a"
+  resolved "https://registry.yarnpkg.com/avax-hd-wallet/-/avax-hd-wallet-1.0.9.tgz#57054fb06b028ad9cd632a6faa68c99050c78a8a"
   integrity sha512-7bJ49V1NWKBcpuLjfdo+8qyeH7svqx9ovbGkqKyXhe0qdY3SvH23KQCH8oFpAv9pQlriirGP9YqwBDMi8gcZWQ==
   dependencies:
     bip39 "^3.0.2"
@@ -2151,7 +2151,7 @@ cli-width@^2.0.0:
 clipboard@^2.0.0:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/clipboard/-/clipboard-2.0.6.tgz#52921296eec0fdf77ead1749421b21c968647376"
-  integrity sha512-g5zbiixBRk/wyKakSwCKd7vQXDjFnAMGHoEyBogG/bw9kTD9GvdAvaoRR1ALcEzt3pVKxZR0pViekPMIS0QyGg==
+  integrity sha512-g5zbiixBRk/wyKakSwCKd7vQXDjFnAMGHoEyBogG/bw9kTD9GvdAvaxoRR1ALcEzt3pVKxZR0pViekPMIS0QyGg==
   dependencies:
     good-listener "^1.2.2"
     select "^1.1.2"
@@ -7964,7 +7964,7 @@ unique-slug@^2.0.0:
 universalify@^0.1.0:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/universalify/-/universalify-0.1.2.tgz#b646f69be3942dabcecc9d6639c80dc105efaa66"
-  integrity sha512-rBJeI5CXAlmy1pV+617WB9J63U6XcazHHF2f2dbJix4XzpUF0RS3Zbj0FGIOCAva5P/d/GBOYaACQ1w+0azUkg==
+  integrity sha512-rBJeI5CXAlmy1pV+617WB9J63U6XcazHHF2f2dbJix4XzpUF0RS3Zbj0FGIOCAvax5P/d/GBOYaACQ1w+0azUkg==
 
 unpipe@1.0.0, unpipe@~1.0.0:
   version "1.0.0"

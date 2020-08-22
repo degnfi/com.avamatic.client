@@ -178,8 +178,8 @@ export default {
       cancel_url: null,
       assets: [
         {
-          asset_code: "AVA",
-          asset_id: "AVA",
+          asset_code: "AVAX",
+          asset_id: "AVAX",
         },
       ],
     };

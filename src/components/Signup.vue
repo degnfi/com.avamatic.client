@@ -167,7 +167,7 @@
 
 <script>
 import CryptoJS from "crypto-js";
-import AvaxHDWallet from "avax-hd-wallet";
+import AvaxHDWallet from "ava-hd-wallet";
 import { v4 as uuidv4 } from "uuid";
 const avalanche = require("avalanche");
 

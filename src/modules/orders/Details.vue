@@ -152,7 +152,7 @@
 </template>
 
 <script>
-import AvaxHDWallet from "avax-hd-wallet";
+import AvaxHDWallet from "ava-hd-wallet";
 import BN from "bn.js";
 import EventBus from "@/event_bus";
 

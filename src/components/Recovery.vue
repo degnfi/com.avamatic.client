@@ -117,7 +117,7 @@
 </template>
 
 <script>
-import AvaxHDWallet from "avax-hd-wallet";
+import AvaHDWallet from "ava-hd-wallet";
 
 export default {
   data() {

@@ -66,7 +66,7 @@
         class="btn btn-square text-sm"
         v-bind:class="{ active: route.name == 'wallet' }"
       >
-        <span class="d-block"><i class="fad fa-sack-dollar-2x"></i></span>
+        <span class="d-block"><i class="fas fa-wallet fa-2x"></i></span>
         <span class="d-block pt-2">Wallet</span>
       </router-link>
       <router-link
@@ -74,7 +74,7 @@
         class="btn btn-square text-sm"
         v-bind:class="{ active: route.name == 'merchants' }"
       >
-        <span class="d-block"><i class="fas fa-shopping-cart-2x"></i></span>
+        <span class="d-block"><i class="fas fa-suitcase fa-2x"></i></span>
         <span class="d-block pt-2">Merchants</span>
       </router-link>
       <router-link

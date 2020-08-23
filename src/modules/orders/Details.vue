@@ -153,8 +153,11 @@
 
 <script>
 import AvaHDWallet from "ava-hd-wallet";
+import AvaHDWallet from "ava-hd-wallet";
+>>>>>>> parent of 585999f... 1
 import BN from "bn.js";
 import EventBus from "@/event_bus";
+
 export default {
   data() {
     return {
@@ -197,14 +200,17 @@ export default {
         const importExternal = myKeychain.importKey(
           this.payment_account.privateKey
         );
+
         myKeychain.getKey(importExternal);
         let myAddresses = this.$ava.keyChain().getAddresses();
         let addressStrings = this.$ava.keyChain().getAddressStrings();
         let utxos = await this.$ava.getUTXOs(myAddresses);
+
         let assetid = this.details.asset_id;
         if (this.details.asset_id == "AVA") {
           assetid = "21d7KVtPrubc5fHr6CGNcgbUb4seUjmZKr35ZX7BZb5iP8pXWA";
         }
+
         this.$ava.getAssetDescription(assetid).then(async (asset_detail) => {
           let sendAmount = new BN(
             this.details.amount * Math.pow(10, asset_detail.denomination)
@@ -227,8 +233,10 @@ export default {
             text: "Successfuly transfered!",
             type: "alert-success",
           });
+
           // update account
           EventBus.$emit("update_account");
+
           this.$router.push("/wallet");
         });
       } catch (e) {

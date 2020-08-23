@@ -168,8 +168,11 @@
 <script>
 import CryptoJS from "crypto-js";
 import AvaHDWallet from "ava-hd-wallet";
+import AvaHDWallet from "ava-hd-wallet";
+>>>>>>> parent of 585999f... 1
 import { v4 as uuidv4 } from "uuid";
 const avalanche = require("avalanche");
+
 export default {
   data() {
     return {
@@ -186,6 +189,7 @@ export default {
   },
   created() {
     this.avm = this.$ava
+
     this.username = uuidv4();
     this.generate_wallet();
   },
@@ -193,12 +197,17 @@ export default {
     generate_wallet() {
       this.mnemonic = AvaHDWallet.generateMnemonic(); // -> "nation profit giant truth meat carpet demand expect nest sudden endorse ahead"
       const wallet = AvaHDWallet.fromMnemonic(this.mnemonic);
+
       let keychain = this.avm.keyChain();
+
       let bintools = avalanche.BinTools.getInstance();
+
       let mypk = bintools.avaDeserialize(wallet.privateKey);
       let addr = keychain.importKey(mypk);
       let keypair = keychain.getKey(addr);
+
       this.signature = keypair.sign("its mert").toString("hex");
+
       this.wallet = JSON.stringify({
         public_key: wallet.publicKey,
         secret_key: wallet.privateKey,
@@ -220,6 +229,7 @@ export default {
           payload: this.encrypted_block,
         }),
       };
+
       this.axios.post("signup", post_data).then((response) => {
         this.$notify({
           group: "platformNotification",

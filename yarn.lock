@@ -1468,7 +1468,7 @@ autoprefixer@^9.5.1:
 
 avax-hd-wallet@^1.0.9:
   version "1.0.9"
-  resolved "https://registry.yarnpkg.com/avax-hd-wallet/-/avax-hd-wallet-1.0.9.tgz#57054fb06b028ad9cd632a6faa68c99050c78a8a"
+  resolved "https://registry.yarnpkg.com/ava-hd-wallet/-/avax-hd-wallet-1.0.9.tgz#57054fb06b028ad9cd632a6faa68c99050c78a8a"
   integrity sha512-7bJ49V1NWKBcpuLjfdo+8qyeH7svqx9ovbGkqKyXhe0qdY3SvH23KQCH8oFpAv9pQlriirGP9YqwBDMi8gcZWQ==
   dependencies:
     bip39 "^3.0.2"

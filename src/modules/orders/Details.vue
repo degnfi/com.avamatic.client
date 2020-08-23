@@ -205,8 +205,8 @@ export default {
         let utxos = await this.$ava.getUTXOs(myAddresses);
 
         let assetid = this.details.asset_id;
-        if (this.details.asset_id == "AVA") {
-          assetid = "21d7KVtPrubc5fHr6CGNcgbUb4seUjmZKr35ZX7BZb5iP8pXWA";
+        if (this.details.asset_id == "AVAX") {
+          assetid = "nznftJBicce1PfWQeNEVBmDyweZZ6zcM3p78z9Hy9Hhdhfaxm";
         }
 
         this.$ava.getAssetDescription(assetid).then(async (asset_detail) => {

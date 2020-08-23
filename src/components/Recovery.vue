@@ -9,7 +9,7 @@
         >
           <span class="text-center"
             ><i class="fad fa-spinner"></i> Avaxchain</span
-            ><i class="fad fa-spinner"></i> Avamatic</span
+            ><i class="fad fas fa-stroopwafel fa-spin"></i> Avaxchain</span
           >
         </router-link>
         <div class="row justify-content-center mb-5">

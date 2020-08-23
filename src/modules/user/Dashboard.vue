@@ -80,7 +80,7 @@ export default {
 
       this.axios
         .get(
-          "https://explorerapi.ava.network/x/transactions?limit=50&address=" +
+          "https://explorerapi.avax.network/x/transactions?limit=50&address=" +
             addressWithoutChainTag
         )
         .then((response) => {

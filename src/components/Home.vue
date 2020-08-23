@@ -5,12 +5,12 @@
       class="logo text-center text-white"
       style="font-size:35px"
     >
-      <span class="text-center"><i class="fad fa-spinner"></i> Avamatic</span>
+      <span class="text-center"><i class="fad fa-mountain"></i> Avaxchain</span>
     </div>
     <div class="row justify-content-around mt-2 align-items-center">
       <div class="col-lg-6 pt-lg-4 text-center">
         <h1 class="display-4 text-white mb-4">
-          Payment gateway and wallet for AVA
+         $Avax Paygate
         </h1>
         <router-link
           to="/login"
@@ -37,7 +37,7 @@
             Built on top of AVA
           </h5>
           <p class="lead my-4">
-            Avamatic allows you to receive payments in any asset that built on
+            Avaxchain allows you to receive payments in any asset that built on
             the AVA network.
           </p>
         </div>
@@ -80,7 +80,7 @@
             Checkout
           </h5>
           <p class="lead my-4">
-            <b>Avamatic Checkout</b> is designed to let your customers deliver
+            <b>Avaxchain Checkout</b> is designed to let your customers deliver
             their payments to you without any problems.
           </p>
         </div>
@@ -102,10 +102,10 @@
             <div
               class="copyright text-sm font-weight-bold text-center text-md-left"
             >
-              © 2020 Avamatic - Developed by
-              <a href="https://datadef.com" target="_blank">DataDef</a>
+              © 2020 Avaxchain - Developed by
+              <a href="https://avaxchain.com" target="_blank">DegnFi</a>
             </div>
-            <small>Avamatic is unaffiliated with Avalabs.</small>
+            <small>Avaxchain is unaffiliated with Avalabs.</small>
           </div>
           <div class="col-md-6">
             <ul
@@ -114,7 +114,7 @@
               <li class="nav-item">
                 <a
                   class="nav-link"
-                  href="https://github.com/datadef"
+                  href="https://github.com/degnfi"
                   target="_blank"
                 >
                   <i class="fab fa-github"></i>

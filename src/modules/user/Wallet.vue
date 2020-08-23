@@ -45,7 +45,7 @@
                   />
                   <div class="media-body ml-3">
                     <span style="font-size:15px;color:#000"
-                      >AVA - <span style="color:#696969">AVA</span></span
+                      >AVAX - <span style="color:#696969">AVAX</span></span
                     >
                   </div>
                 </div>

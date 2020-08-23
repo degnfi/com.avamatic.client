@@ -185,7 +185,7 @@ export default {
       this.is_loading = true;
       let wallet = JSON.parse(this.$store.getters.SEND_WALLET);
 
-      this.$avax.getAllBalances(wallet.public_key).then((response) => {
+      this.$ava.getAllBalances(wallet.public_key).then((response) => {
         this.$store.commit("UPDATE_ASSETS_EMPTY");
         let assets = response;
         assets.forEach((asset, index) => {
@@ -197,7 +197,7 @@ export default {
             this.native_asset.denomination = 9
             assets.splice(index, index);
           } else {
-            this.$avax.getAssetDescription(asset.asset).then((asset_detail) => {
+            this.$ava.getAssetDescription(asset.asset).then((asset_detail) => {
               assets[index]["balance"] =
                 asset.balance / Math.pow(10, asset_detail.denomination);
               assets[index]["name"] = asset_detail.name;

@@ -34,11 +34,11 @@
       <div class="col-lg-5">
         <div>
           <h5 class="title">
-            Built on top of AVA
+            Built on AVAX
           </h5>
           <p class="lead my-4">
             Avaxchain allows you to receive payments in any asset that built on
-            the AVA network.
+            the AVAX network.
           </p>
         </div>
       </div>
@@ -57,7 +57,7 @@
           <p class="lead mt-4 mb-5">
             We don't need your private key for the payment service because you
             have full control with the <b>HD Mnemonic Wallet</b> library we have
-            developed for AVA!
+            developed for AVAX!
           </p>
           <p class="lead mt-4 mb-5">
             Your password and private key will never leave your device. All

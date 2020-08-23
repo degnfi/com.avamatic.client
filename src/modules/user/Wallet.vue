@@ -39,7 +39,7 @@
               <th scope="row">
                 <div class="media align-items-center">
                   <img
-                    src="@/assets/img/icons/avax-token.png"
+                    src="@/assets/img/icons/ava-token.png"
                     style="padding:3px;width:45px;height:45px;background:#000"
                     class="rounded-circle"
                   />

@@ -5,12 +5,12 @@
       class="logo text-center text-white"
       style="font-size:35px"
     >
-      <span class="text-center"><i class="fad fa-spinner"></i> Avaxchain</span>
+      <span class="text-center"><i class="fad fas fa-stroopwafel fa-spin"></i> Avaxchain.com</span>
     </div>
     <div class="row justify-content-around mt-2 align-items-center">
       <div class="col-lg-6 pt-lg-4 text-center">
         <h1 class="display-4 text-white mb-4">
-          Payment gateway and wallet for AVAX
+          Paygate and $Avax wallet
         </h1>
         <router-link
           to="/login"
@@ -21,12 +21,12 @@
           to="/documentation"
           class="btn btn-lg text-white btn-secondary btn-icon rounded-pill hover-translate-y-n3 mt-4"
         >
-          <span class="btn-inner--text">Documentation</span>
+          <span class="btn-inner--text">API</span>
         </router-link>
                 <router-link
           to="/shop"
           class="btn btn-lg text-white btn-warning rounded-pill hover-translate-y-n3 ml-2 mt-4"
-          >Try Checkout</router-link
+          >Checkout</router-link
         >
       </div>
     </div>
@@ -34,11 +34,11 @@
       <div class="col-lg-5">
         <div>
           <h5 class="title">
-            Built on AVAX
+            Built on top of AVA
           </h5>
           <p class="lead my-4">
             Avaxchain allows you to receive payments in any asset that built on
-            the AVAX network.
+            the AVA network.
           </p>
         </div>
       </div>
@@ -57,7 +57,7 @@
           <p class="lead mt-4 mb-5">
             We don't need your private key for the payment service because you
             have full control with the <b>HD Mnemonic Wallet</b> library we have
-            developed for AVAX!
+            developed for AVA!
           </p>
           <p class="lead mt-4 mb-5">
             Your password and private key will never leave your device. All
@@ -103,9 +103,9 @@
               class="copyright text-sm font-weight-bold text-center text-md-left"
             >
               © 2020 Avaxchain - Developed by
-              <a href="https://avaxchain.com" target="_blank">degnfi</a>
+              <a href="https://datadef.com" target="_blank">DataDef</a>
             </div>
-            <small>avaxchain is unaffiliated with Avaxlabs.</small>
+            <small>Avaxchain is unaffiliated with Avalabs.</small>
           </div>
           <div class="col-md-6">
             <ul
@@ -114,7 +114,7 @@
               <li class="nav-item">
                 <a
                   class="nav-link"
-                  href="https://github.com/degnfi"
+                  href="https://github.com/datadef"
                   target="_blank"
                 >
                   <i class="fab fa-github"></i>

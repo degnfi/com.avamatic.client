@@ -153,8 +153,6 @@
 
 <script>
 import AvaHDWallet from "ava-hd-wallet";
-import AvaHDWallet from "ava-hd-wallet";
->>>>>>> parent of 585999f... 1
 import BN from "bn.js";
 import EventBus from "@/event_bus";
 

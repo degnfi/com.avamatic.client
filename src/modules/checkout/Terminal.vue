@@ -5,7 +5,7 @@
       class="logo d-none d-sm-block text-center text-white"
       style="font-size:35px"
     >
-      <span class="text-center"><i class="fad fas fa-stroopwafel fa-spin"></i> Avaxchain</span>
+      <span class="text-center"><i class="fad fa-spinner"></i> Avaxchain</span>
     </router-link>
     <div class="card card-body align-center col-md-6">
       <div class="row align-items-center mb-5">

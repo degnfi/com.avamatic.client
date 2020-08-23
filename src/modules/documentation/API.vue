@@ -5,7 +5,7 @@
       class="logo d-none d-sm-block text-center mb-5 text-white"
       style="font-size:35px"
     >
-      <span class="text-center"><i class="fad fas fa-stroopwafel fa-spin"></i> Avaxchain</span
+      <span class="text-center"><i class="fad fa-spinner"></i> Avaxchain</span
       ><small class="ml-2">/api</small>
     </router-link>
     <div class="card" style="padding:50px">

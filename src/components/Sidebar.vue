@@ -6,7 +6,7 @@
         class="navbar-brand text-white"
         style="font-size:35px;margin-left:20px;margin-top:-10px"
       >
-        <span class="text-center"><i class="fad fas fa-stroopwafel fa-spin"></i> Avaxchain</span>
+        <span class="text-center"><i class="fad fa-spinner"></i> Avaxchain</span>
       </router-link>
       <div class="ml-auto">
         <div

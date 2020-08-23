@@ -17,7 +17,7 @@
         >
           <div class="actions actions-dark d-inline-block">
             <router-link to="/wallet/create" class="action-item ml-md-4">
-              <i class="far fa-plus mr-2"></i>Create an asset on AVAX
+              <i class="far fa-plus mr-2"></i>Create an asset on AVA
             </router-link>
           </div>
         </div>

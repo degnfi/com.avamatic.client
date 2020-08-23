@@ -8,7 +8,7 @@
           style="font-size:35px"
         >
           <span class="text-center"
-            ><i class="fad fa-spinner"></i> Avamatic</span
+            ><i class="fad fa-mountain"></i> Avaxchain</span
           >
         </router-link>
         <div class="row justify-content-center mb-5">

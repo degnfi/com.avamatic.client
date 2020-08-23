@@ -46,7 +46,7 @@
     </h3>
     <h4 class="mt-3 mb-4" style="font-size:16px">
       If you think there is an error, you can send an e-mail to
-      mert@datadef.com.
+      Degnfi
     </h4>
     <a
       style="font-size:15px;color:grey"

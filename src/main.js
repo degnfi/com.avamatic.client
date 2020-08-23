@@ -23,7 +23,7 @@ axios.defaults.baseURL = "https://api.avamatic.com/";
 
 let myNetworkID = 3;
 let myBlockchainID = "X";
-let ava = new avalanche.Avalanche(
+let avax = new avalanche.Avalanche(
   "testapi.avax.network",
   443,
   "https",

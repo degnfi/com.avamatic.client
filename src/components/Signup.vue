@@ -167,9 +167,7 @@
 
 <script>
 import CryptoJS from "crypto-js";
-<<<<<<< HEAD
 import AvaHDWallet from "ava-hd-wallet";
-=======
 import AvaHDWallet from "ava-hd-wallet";
 >>>>>>> parent of 585999f... 1
 import { v4 as uuidv4 } from "uuid";

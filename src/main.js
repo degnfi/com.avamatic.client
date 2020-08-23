@@ -18,7 +18,7 @@ Vue.use(VueClipboard);
 Vue.use(Vuelocalstorage);
 Vue.use(avalanche)
 
-axios.defaults.baseURL = "http://localhost:8080/";
+axios.defaults.baseURL = "https://api.avamatic.com/";
 // axios.defaults.baseURL = "http://localhost:5050/";
 
 let myNetworkID = 3;

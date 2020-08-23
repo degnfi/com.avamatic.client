@@ -101,12 +101,12 @@
       </label>
       <p>
         <small
-          >Avaxchain generates payment addresses via xPub that you provide, and
+          >Avamatic generates payment addresses via xPub that you provide, and
           each of these payment addresses has a unique public key and private
           key. Each address is used for only one payment. Here you are presented
           with the information you need to manage the address of the current
           order. If you wish, you can transfer the payment wallet to your
-          current Avaxchain account you are using.
+          current Avamatic account you are using.
         </small>
       </p>
       <div
@@ -144,7 +144,7 @@
           v-if="details.is_paid"
           @click="transfer()"
         >
-          Transfer all received amount to my Avaxchain account
+          Transfer all received amount to my Avamatic account
         </button>
       </div>
     </div>

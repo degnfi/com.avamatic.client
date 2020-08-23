@@ -1,4 +1,4 @@
-# com.Avaxchain.client
+# com.avamatic.client
 
 ## Project setup
 ```

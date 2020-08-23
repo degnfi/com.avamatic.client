@@ -5,7 +5,7 @@
       class="logo d-none d-sm-block text-center text-white"
       style="font-size:35px"
     >
-      <span class="text-center"><i class="fad fa-spinner"></i> Avaxchain</span>
+      <span class="text-center"><i class="fad fa-spinner"></i> Avamatic</span>
     </router-link>
     <div class="card card-body align-center col-md-6">
       <div class="mb-3">
@@ -22,15 +22,15 @@
         <div class="col-lg-6 col-md-8">
           <h4 style="color:#000">{{item_name}}</h4>
           <p class="text-sm">
-            DefiDegenprotocols
-            Millions
+            Intel QuadCore i7 2,6 GHz - Turbo Boost 3,5 GHzArticle number
+            MLH32-12522
           </p>
         </div>
       </div>
       <label>Quantity</label>
       <input v-model="quantity" class="col-md-3 form-control"></input>
       <button class="mt-3 btn btn-primary" @click="order()">Buy now</button>
-      <small class="mt-3">* Unreal DefiDegenprotocols.</small>
+      <small class="mt-3">* This is not a real product.</small>
     </div>
   </div>
 </template>
@@ -39,7 +39,7 @@
 export default {
   data(){
     return {
-      item_name: "Defi coins ",
+      item_name: "Macbook Pro",
       quantity: 1
     }
   },

@@ -67,10 +67,6 @@ export default {
         let myAddresses = this.$ava.keyChain().getAddresses();
         let addressStrings = this.$ava.keyChain().getAddressStrings();
         let utxos = await this.$ava.getUTXOs(myAddresses);
-<<<<<<< HEAD
-=======
-
->>>>>>> parent of 15562ba... up
         let assetid = this.asset.asset;
         if (this.asset.asset == "AVA") {
           assetid = "21d7KVtPrubc5fHr6CGNcgbUb4seUjmZKr35ZX7BZb5iP8pXWA";

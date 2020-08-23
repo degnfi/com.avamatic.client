@@ -17,7 +17,7 @@
         >
           <div class="actions actions-dark d-inline-block">
             <router-link to="/wallet/create" class="action-item ml-md-4">
-              <i class="far fa-plus mr-2"></i>Create an asset on AVAX
+              <i class="far fa-plus mr-2"></i>Create an asset on AVA
             </router-link>
           </div>
         </div>
@@ -45,7 +45,7 @@
                   />
                   <div class="media-body ml-3">
                     <span style="font-size:15px;color:#000"
-                      >AVAX - <span style="color:#696969">AVAX</span></span
+                      >AVA - <span style="color:#696969">AVA</span></span
                     >
                   </div>
                 </div>
@@ -185,11 +185,11 @@ export default {
       this.is_loading = true;
       let wallet = JSON.parse(this.$store.getters.SEND_WALLET);
 
-      this.$avax.getAllBalances(wallet.public_key).then((response) => {
+      this.$ava.getAllBalances(wallet.public_key).then((response) => {
         this.$store.commit("UPDATE_ASSETS_EMPTY");
         let assets = response;
         assets.forEach((asset, index) => {
-          if (asset.asset == "AVAX") {
+          if (asset.asset == "AVA") {
             this.native_asset.name = asset.asset;
             this.native_asset.asset = asset.asset;
             this.native_asset.symbol = asset.asset;
@@ -197,7 +197,7 @@ export default {
             this.native_asset.denomination = 9
             assets.splice(index, index);
           } else {
-            this.$avax.getAssetDescription(asset.asset).then((asset_detail) => {
+            this.$ava.getAssetDescription(asset.asset).then((asset_detail) => {
               assets[index]["balance"] =
                 asset.balance / Math.pow(10, asset_detail.denomination);
               assets[index]["name"] = asset_detail.name;

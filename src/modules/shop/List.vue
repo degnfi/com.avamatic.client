@@ -5,7 +5,7 @@
       class="logo d-none d-sm-block text-center text-white"
       style="font-size:35px"
     >
-      <span class="text-center"><i class="fad fa-spinner"></i> Avaxchain</span>
+      <span class="text-center"><i class="fad fa-spinner"></i> Avamatic</span>
     </router-link>
     <div class="card card-body align-center col-md-6">
       <div class="mb-3">
@@ -15,7 +15,7 @@
       </div>
       <div class="mb-3">
        <span class="badge badge-pill badge-success" style="font-size:17px"
-          >0.000001 AVAX</span
+          >0.000001 AVA</span
         >
       </div>
       <div class="row">
@@ -45,7 +45,7 @@ export default {
   },
   methods:{
     order(){
-      this.axios.get("orders/create?merchant=5ee1312d45045a484e476769&asset_code=AVAX&asset_id=AVAX&item_name="+this.item_name+"&item_price="+0.000001+"&item_quantity="+this.quantity).then((response) => {
+      this.axios.get("orders/create?merchant=5ee1312d45045a484e476769&asset_code=AVA&asset_id=AVA&item_name="+this.item_name+"&item_price="+0.000001+"&item_quantity="+this.quantity).then((response) => {
         this.$router.push('/checkout/'+response.data._id)
       });
     }

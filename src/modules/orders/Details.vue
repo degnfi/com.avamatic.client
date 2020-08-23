@@ -101,12 +101,12 @@
       </label>
       <p>
         <small
-          >Avaxchain generates payment addresses via xPub that you provide, and
+          >Avamatic generates payment addresses via xPub that you provide, and
           each of these payment addresses has a unique public key and private
           key. Each address is used for only one payment. Here you are presented
           with the information you need to manage the address of the current
           order. If you wish, you can transfer the payment wallet to your
-          current Avaxchain account you are using.
+          current Avamatic account you are using.
         </small>
       </p>
       <div
@@ -144,7 +144,7 @@
           v-if="details.is_paid"
           @click="transfer()"
         >
-          Transfer all received amount to my Avaxchain account
+          Transfer all received amount to my Avamatic account
         </button>
       </div>
     </div>
@@ -152,7 +152,11 @@
 </template>
 
 <script>
+<<<<<<< HEAD
 import AvaxHDWallet from "ava-hd-wallet";
+=======
+import AvaHDWallet from "ava-hd-wallet";
+>>>>>>> parent of 585999f... 1
 import BN from "bn.js";
 import EventBus from "@/event_bus";
 
@@ -188,33 +192,33 @@ export default {
         .get("orders/" + id + "/details", axiosConfig)
         .then((response) => {
           this.details = response.data;
-          AvaxHDWallet.setPath(response.data.derivation_path);
-          this.payment_account = AvaxHDWallet.fromExtendedPrivateKey(this.xprv);
+          AvaHDWallet.setPath(response.data.derivation_path);
+          this.payment_account = AvaHDWallet.fromExtendedPrivateKey(this.xprv);
         });
     },
     async transfer() {
       try {
-        let myKeychain = this.$avax.keyChain();
+        let myKeychain = this.$ava.keyChain();
         const importExternal = myKeychain.importKey(
           this.payment_account.privateKey
         );
 
         myKeychain.getKey(importExternal);
-        let myAddresses = this.$avax.keyChain().getAddresses();
-        let addressStrings = this.$avax.keyChain().getAddressStrings();
-        let utxos = await this.$avax.getUTXOs(myAddresses);
+        let myAddresses = this.$ava.keyChain().getAddresses();
+        let addressStrings = this.$ava.keyChain().getAddressStrings();
+        let utxos = await this.$ava.getUTXOs(myAddresses);
 
         let assetid = this.details.asset_id;
-        if (this.details.asset_id == "AVAX") {
+        if (this.details.asset_id == "AVA") {
           assetid = "21d7KVtPrubc5fHr6CGNcgbUb4seUjmZKr35ZX7BZb5iP8pXWA";
         }
 
-        this.$avax.getAssetDescription(assetid).then(async (asset_detail) => {
+        this.$ava.getAssetDescription(assetid).then(async (asset_detail) => {
           let sendAmount = new BN(
             this.details.amount * Math.pow(10, asset_detail.denomination)
           );
           let friendsAddress = this.wallet.public_key;
-          let unsignedTx = await this.$avax.buildBaseTx(
+          let unsignedTx = await this.$ava.buildBaseTx(
             utxos,
             sendAmount,
             [friendsAddress],
@@ -222,9 +226,9 @@ export default {
             addressStrings,
             assetid
           );
-          let signedTx = this.$avax.signTx(unsignedTx);
-          let txid = await this.$avax.issueTx(signedTx);
-          let status = await this.$avax.getTxStatus(txid);
+          let signedTx = this.$ava.signTx(unsignedTx);
+          let txid = await this.$ava.issueTx(signedTx);
+          let status = await this.$ava.getTxStatus(txid);
           this.$notify({
             group: "platformNotification",
             title: "Successful.",

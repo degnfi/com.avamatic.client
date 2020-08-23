@@ -40,7 +40,7 @@
               X-5IAMasd1l23m2...
             </td>
             <td>
-              AVAX
+              AVA
             </td>
             <td>
               0.1231292
@@ -80,7 +80,7 @@ export default {
 
       this.axios
         .get(
-          "https://explorerapi.avax.network/x/transactions?limit=50&address=" +
+          "https://explorerapi.ava.network/x/transactions?limit=50&address=" +
             addressWithoutChainTag
         )
         .then((response) => {

@@ -18,7 +18,7 @@
                 <div class="mb-3">
                   <h6 class="h3">Create account</h6>
                   <p class="text-muted mb-0">
-                    Have an account and unlock access to the entire AVA network
+                    Have an account and unlock access to the entire AVAX network
                   </p>
                 </div>
                 <div

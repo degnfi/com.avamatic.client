@@ -45,7 +45,6 @@
 <script>
 import BN from "bn.js";
 import EventBus from "@/event_bus";
-
 export default {
   data() {
     return {
@@ -62,14 +61,12 @@ export default {
     async withdraw() {
       try {
         let wallet = JSON.parse(this.$store.getters.SEND_WALLET);
-        let myKeychain = this.$avax.keyChain();
+        let myKeychain = this.$ava.keyChain();
         const importExternal = myKeychain.importKey(wallet.secret_key);
-
         myKeychain.getKey(importExternal);
-        let myAddresses = this.$avax.keyChain().getAddresses();
-        let addressStrings = this.$avax.keyChain().getAddressStrings();
-        let utxos = await this.$avax.getUTXOs(myAddresses);
-
+        let myAddresses = this.$ava.keyChain().getAddresses();
+        let addressStrings = this.$ava.keyChain().getAddressStrings();
+        let utxos = await this.$ava.getUTXOs(myAddresses);
         let assetid = this.asset.asset;
         if (this.asset.asset == "AVA") {
           assetid = "21d7KVtPrubc5fHr6CGNcgbUb4seUjmZKr35ZX7BZb5iP8pXWA";
@@ -79,11 +76,9 @@ export default {
         let sendAmount = new BN(
           this.amount * Math.pow(10, this.asset.denomination)
         );
-
         console.log(sendAmount)
-
         let friendsAddress = this.destination;
-        let unsignedTx = await this.$avax.buildBaseTx(
+        let unsignedTx = await this.$ava.buildBaseTx(
           utxos,
           sendAmount,
           [friendsAddress],
@@ -91,9 +86,9 @@ export default {
           addressStrings,
           assetid
         );
-        let signedTx = this.$avax.signTx(unsignedTx);
-        let txid = await this.$avax.issueTx(signedTx);
-        let status = await this.$avax.getTxStatus(txid);
+        let signedTx = this.$ava.signTx(unsignedTx);
+        let txid = await this.$ava.issueTx(signedTx);
+        let status = await this.$ava.getTxStatus(txid);
         if (status == "Accepted" || status == "Processing") {
           this.$notify({
             group: "platformNotification",
@@ -101,13 +96,10 @@ export default {
             text: "Successfuly done!",
             type: "alert-success",
           });
-
           // update account
           EventBus.$emit("update_assets");
-
           this.destination = null;
           this.amount = null;
-
           // close modal and reset inputs
           document.getElementById("withdrawModal").click();
         } else {

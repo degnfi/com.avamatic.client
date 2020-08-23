@@ -3,14 +3,14 @@
     <div
       to="/dashboard"
       class="logo text-center text-white"
-      style="font-size:35px"
+      style="font-size:65px"
     >
       <span class="text-center"><i class="fad fa-mountain"></i> Avaxchain</span>
     </div>
     <div class="row justify-content-around mt-2 align-items-center">
       <div class="col-lg-6 pt-lg-4 text-center">
         <h1 class="display-4 text-white mb-4">
-         $Avax Paygate
+         $AVAX Paygate
         </h1>
         <router-link
           to="/login"

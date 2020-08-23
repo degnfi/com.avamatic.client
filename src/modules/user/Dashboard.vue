@@ -40,7 +40,7 @@
               X-5IAMasd1l23m2...
             </td>
             <td>
-              AVAX
+              AVA
             </td>
             <td>
               0.1231292

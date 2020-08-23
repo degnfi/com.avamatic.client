@@ -6578,11 +6578,11 @@
     content: "\f719"
 }
 
-.fa-spinner:before {
+.fas fa-stroopwafel fa-spin:before {
     content: "\f110"
 }
 
-.fa-spinner-third:before {
+.fas fa-stroopwafel fa-spin-third:before {
     content: "\f3f4"
 }
 

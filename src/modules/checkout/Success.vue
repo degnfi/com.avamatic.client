@@ -29,10 +29,10 @@
     <h3 class="text-secondary mt-4">Payment is successfully done</h3>
     <h4>
       <a
-        :href="'https://explorer.avax.network/address/' + order.destination_w_tag"
+        :href="'https://explorer.ava.network/address/' + order.destination_w_tag"
         target="_blank"
         style="font-size:15px;color:grey"
-        >Check on Avax Explorer</a
+        >Check on Ava Explorer</a
       >
     </h4>
     <a

@@ -21,12 +21,12 @@
           to="/documentation"
           class="btn btn-lg text-white btn-secondary btn-icon rounded-pill hover-translate-y-n3 mt-4"
         >
-          <span class="btn-inner--text">Documentation</span>
+          <span class="btn-inner--text">API</span>
         </router-link>
                 <router-link
           to="/shop"
           class="btn btn-lg text-white btn-warning rounded-pill hover-translate-y-n3 ml-2 mt-4"
-          >Try Checkout</router-link
+          >Checkout</router-link
         >
       </div>
     </div>

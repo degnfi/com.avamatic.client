@@ -62,13 +62,13 @@ export default {
     async withdraw() {
       try {
         let wallet = JSON.parse(this.$store.getters.SEND_WALLET);
-        let myKeychain = this.$ava.keyChain();
+        let myKeychain = this.$avax.keyChain();
         const importExternal = myKeychain.importKey(wallet.secret_key);
 
         myKeychain.getKey(importExternal);
-        let myAddresses = this.$ava.keyChain().getAddresses();
-        let addressStrings = this.$ava.keyChain().getAddressStrings();
-        let utxos = await this.$ava.getUTXOs(myAddresses);
+        let myAddresses = this.$avax.keyChain().getAddresses();
+        let addressStrings = this.$avax.keyChain().getAddressStrings();
+        let utxos = await this.$avax.getUTXOs(myAddresses);
 
         let assetid = this.asset.asset;
         if (this.asset.asset == "AVA") {
@@ -83,7 +83,7 @@ export default {
         console.log(sendAmount)
 
         let friendsAddress = this.destination;
-        let unsignedTx = await this.$ava.buildBaseTx(
+        let unsignedTx = await this.$avax.buildBaseTx(
           utxos,
           sendAmount,
           [friendsAddress],
@@ -91,9 +91,9 @@ export default {
           addressStrings,
           assetid
         );
-        let signedTx = this.$ava.signTx(unsignedTx);
-        let txid = await this.$ava.issueTx(signedTx);
-        let status = await this.$ava.getTxStatus(txid);
+        let signedTx = this.$avax.signTx(unsignedTx);
+        let txid = await this.$avax.issueTx(signedTx);
+        let status = await this.$avax.getTxStatus(txid);
         if (status == "Accepted" || status == "Processing") {
           this.$notify({
             group: "platformNotification",

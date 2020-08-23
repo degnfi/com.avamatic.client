@@ -36,8 +36,8 @@
             to="/wallet"
             class="btn-spec bg-white rounded-pill"
           >
-            <span v-if="account">{{ account / 1000000000 }} AVA</span>
-            <span v-else> {{ account }} AVA </span>
+            <span v-if="account">{{ account / 1000000000 }} AVAX</span>
+            <span v-else> {{ account }} AVAX </span>
           </router-link>
         </div>
       </div>

@@ -15,7 +15,7 @@
       </div>
       <div class="mb-3">
        <span class="badge badge-pill badge-success" style="font-size:17px"
-          >0.000001 AVA</span
+          >0.000001 AVAX</span
         >
       </div>
       <div class="row">

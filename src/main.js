@@ -21,9 +21,9 @@ Vue.use(avalanche)
 axios.defaults.baseURL = "https://api.avamatic.com/";
 // axios.defaults.baseURL = "http://localhost:5050/";
 
-let myNetworkID = 3;
+let myNetworkID = 12345;
 let myBlockchainID = "X";
-let ava = new avalanche.Avalanche(
+let avax = new avalanche.Avalanche(
   "testapi.avax.network",
   443,
   "https",

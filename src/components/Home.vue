@@ -2,7 +2,7 @@
   <div class="container mt-5 position-relative index">
     <div
       to="/dashboard"
-      class="logo text-center text-white"
+      class="logo text-right text-white"
       style="font-size:45px"
     >
       <span class="text-center"><i class="fad fa-mountain"></i> avaxchain</span>
@@ -27,7 +27,7 @@
                 <router-link
           to="/shop"
           class="btn btn-lg text-white btn-warning rounded-pill hover-translate-y-n3 ml-2 mt-4"
-          >Checkout</router-link
+          >Payout</router-link
         >
       </div>
     </div>

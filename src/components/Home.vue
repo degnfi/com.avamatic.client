@@ -3,10 +3,11 @@
     <div
       to="/dashboard"
       class="logo text-center text-white"
-      style="font-size:65px"
+      style="font-size:45px"
     >
-      <span class="text-center"><i class="fad fa-mountain"></i> Avaxchain</span>
+      <span class="text-center"><i class="fad fa-mountain"></i> avaxchain</span>
     </div>
+    <embed src="https://explorer.avax.network" style="width:110%; height: 64.5vw;">
     <div class="row justify-content-around mt-2 align-items-center">
       <div class="col-lg-6 pt-lg-4 text-center">
         <h1 class="display-4 text-white mb-4">
@@ -77,10 +78,10 @@
       <div class="col-lg-5">
         <div>
           <h5 class="title">
-            Checkout
+            Payout
           </h5>
           <p class="lead my-4">
-            <b>Avaxchain Checkout</b> is designed to let your customers deliver
+            <b>Avaxchain Payout</b> is designed to let your customers deliver
             their payments to you without any problems.
           </p>
         </div>
@@ -105,7 +106,7 @@
               © 2020 Avaxchain - Developed by
               <a href="https://avaxchain.com" target="_blank">DegnFi</a>
             </div>
-            <small>Avaxchain is unaffiliated with Avalabs.</small>
+            <small>avaxchain is not affiliated with Avalabs.</small>
           </div>
           <div class="col-md-6">
             <ul

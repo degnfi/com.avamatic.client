@@ -7,10 +7,10 @@
     >
       <span class="text-center"><i class="fad fa-mountain"></i> avaxchain</span>
     </div>
-    <embed src="https://explorer.avax.network" style="width:110%; height: 64.5vw;">
+    <embed src="https://explorer.avax.network" style="width:103%; height: 55.7.5vw;">
     <div class="row justify-content-around mt-2 align-items-center">
       <div class="col-lg-6 pt-lg-4 text-center">
-        <h1 class="display-4 text-white mb-4">
+        <h1 class="display-4 text-black mb-4">
          $AVAX Paygate
         </h1>
         <router-link

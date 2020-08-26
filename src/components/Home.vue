@@ -97,7 +97,7 @@
         </h5><p data-v-02792da4="" class="lead my-4">
           Spam the AVAX network with api
           requests till it somebody passes out.
-      </div>
+      </div></p>
       <div data-v-02792da4="" class="col-md-10"><embed data-v-02792da4="" src="https://graphql.avascan.info/" style="width: 100%; height: 37.7vw;"></div>
     <footer class="footer footer-light pt-0">
       <div class="container">

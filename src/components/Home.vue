@@ -31,15 +31,15 @@
         >
       </div>
     </div>
-    <div class="row row-grid mt-10 justify-content-around align-items-center">
-      <div class="col-lg-5">
+    <div class="row row-grid mt-7 justify-content-around align-items-center">
+      <div class="col-md-5">
         <div>
           <h5 class="title">
-            Built on AVAX
+            Avaxchain Paygate
           </h5>
           <p class="lead my-4">
-            Avaxchain allows you to receive payments in any asset that built on
-            the AVAX network.
+            Avaxchain Paygate is built to send/receive payments for all
+            all assets on AVAX.
           </p>
         </div>
       </div>
@@ -54,15 +54,13 @@
     <div class="row row-grid justify-content-around mt-5 align-items-center">
       <div class="col-lg-5 order-lg-2">
         <div>
-          <h5 class="title">We don't need your private key!</h5>
+          <h5 class="title">Avamatic's HD Mnemonic Wallet!</h5>
           <p class="lead mt-4 mb-5">
-            We don't need your private key for the payment service because you
-            have full control with the <b>HD Mnemonic Wallet</b> library we have
+            Your private key does not need to leave your device <b>HD Mnemonic Wallet</b> library is
             developed for AVAX!
           </p>
           <p class="lead mt-4 mb-5">
-            Your password and private key will never leave your device. All
-            processes are carried out on your device.
+            Your keys, your assets.
           </p>
         </div>
       </div>
@@ -81,8 +79,7 @@
             Payout
           </h5>
           <p class="lead my-4">
-            <b>Avaxchain Payout</b> is designed to let your customers deliver
-            their payments to you without any problems.
+            <b>Avaxchain Payout</b> is designed to keep your ebusiness on track.
           </p>
         </div>
       </div>
@@ -94,6 +91,13 @@
         />
       </div>
     </div>
+    <div data-v-8dc7cce2="" class="row row-grid justify-content-around mt-5 align-items-center">
+<div data-v-02792da4=""><h5 data-v-02792da4="" class="title">
+          Avalanche live api playground
+        </h5><p data-v-02792da4="" class="lead my-4">
+          Spam the AVAX network with api
+          requests till it somebody passes out.
+        </p></div></div>
     <footer class="footer footer-light pt-0">
       <div class="container">
         <div

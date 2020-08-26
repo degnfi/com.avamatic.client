@@ -94,9 +94,10 @@
     <div data-v-8dc7cce2="" class="row row-grid justify-content-around mt-5 align-items-center">
 <div data-v-02792da4=""><h5 data-v-02792da4="" class="title">
           Avalanche live api playground
-        </h5><p data-v-02792da4="" class="lead my-4">
-          Spam the AVAX network with api
-          requests till it somebody passes out.
+          <p data-v-02792da4="" class="lead my-4">
+            Spam the AVAX network with api
+            requests till it somebody passes out.
+          </p>
       </div></p></p>
       <div data-v-02792da4="" class="col-md-10"><embed data-v-02792da4="" src="https://graphql.avascan.info/" style="width: 100%; height: 37.7vw;"></div>
     <footer class="footer footer-light pt-0">

@@ -38,30 +38,25 @@
             Built on AVAX
           </h5>
           <p class="lead my-4">
-            Avaxchain allows you to receive payments in any asset that built on
-            the AVAX network.
+            Avaxchain allows you to send and receive payments in any asset that is on
+            Avalanche AVAX.
+            You can create assets in seconds.
           </p>
         </div>
       </div>
-      <div class="col-lg-6">
-        <img
-          style="border-radius:15px"
-          src="@/assets/img/platform.png"
-          class="img-fluid"
-        />
       </div>
     </div>
     <div class="row row-grid justify-content-around mt-5 align-items-center">
       <div class="col-lg-5 order-lg-2">
         <div>
-          <h5 class="title">We don't need your private key!</h5>
+          <h5 class="title">Avamatic's HD Mnemonic Wallet!</h5>
           <p class="lead mt-4 mb-5">
-            We don't need your private key for the payment service because you
-            have full control with the <b>HD Mnemonic Wallet</b> library we have
-            developed for AVAX!
+          our password and private key will never leave your device. All
+          processes are carried out on your device. <b>HD Mnemonic Wallet</b> Avamatic
+          developed for AVAX!
           </p>
           <p class="lead mt-4 mb-5">
-            Your password and private key will never leave your device. All
+            Again, your password and private key will never leave your device. All
             processes are carried out on your device.
           </p>
         </div>
@@ -75,22 +70,18 @@
       </div>
     </div>
     <div class="row row-grid justify-content-around mt-5 align-items-center">
-      <div class="col-lg-5">
+      <div class="col-md-9">
         <div>
           <h5 class="title">
-            Payout
+            Avalanche live api playground
           </h5>
           <p class="lead my-4">
-            <b>Avaxchain Payout</b> is designed to let your customers deliver
-            their payments to you without any problems.
+            <b>Avaxchain Payout</b> Spam the AVAX network with api request.
           </p>
         </div>
       </div>
-      <div class="col-lg-4">
-        <img
-          style="border-radius:15px"
-          src="@/assets/img/checkout.png"
-          class="img-fluid"
+      <div class="col-md-8">
+        <<embed data-v-02792da4="" src="https://graphql.avascan.info/" style="width: 100%; height: 37.7vw;"></div>
         />
       </div>
     </div>

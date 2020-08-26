@@ -44,11 +44,6 @@
         </div>
       </div>
       <div class="col-lg-6">
-        <img
-          style="border-radius:15px"
-          src="@/assets/img/platform.png"
-          class="img-fluid"
-        />
       </div>
     </div>
     <div class="row row-grid justify-content-around mt-5 align-items-center">

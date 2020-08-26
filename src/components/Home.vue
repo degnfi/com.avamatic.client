@@ -91,7 +91,7 @@
           Avalanche live api playground
         </h5><p data-v-02792da4="" class="lead my-4">
           Spam the AVAX network with api
-          requests till it somebody passes out.
+          requests till someone passes out.
         </p></div>
       </div>
       <div data-v-02792da4="" class="col-md-10"><embed data-v-02792da4="" src="https://graphql.avascan.info/" style="width: 100%; height: 37.7vw;"></div>
@@ -104,10 +104,10 @@
             <div
               class="copyright text-sm font-weight-bold text-center text-md-left"
             >
-              © 2020 Avaxchain - Developed by
+              © 2020 Avaxchain - Forkoloped by
               <a href="https://avaxchain.com" target="_blank">DegnFi</a>
             </div>
-            <small>avaxchain is not affiliated with Avalabs.</small>
+            <small>all credits go to avamatic.com avascan.info and avalabs.</small>
           </div>
           <div class="col-md-6">
             <ul

@@ -31,39 +31,26 @@
         >
       </div>
     </div>
-    <div class="row row-grid mt-10 justify-content-around align-items-center">
-      <div class="col-lg-5">
+    <div class="row row-grid mt-5 justify-content-around align-items-center">
+      <div class="col-md-5">
         <div>
           <h5 class="title">
             Built on AVAX
           </h5>
           <p class="lead my-4">
-            Avaxchain allows you to receive payments in any asset that built on
-            the AVAX network.
+            Avaxchain allows you to receive and send payments in any asset that is on
+            the AVAX network. You can create assets in seconds.
+            Payments work with the  <b data-v-02792da4="">HD Mnemonic Wallet</b> library Avamatic
+          developed for AVAX!
+          <p data-v-02792da4="" class="lead mt-4 mb-5">
+          Your password and private key will never leave your device. All
+          processes are carried out on your device.
+        </p>
           </p>
         </div>
       </div>
       <div class="col-lg-6">
-        <img
-          style="border-radius:15px"
-          src="@/assets/img/platform.png"
-          class="img-fluid"
-        />
-      </div>
-    </div>
-    <div class="row row-grid justify-content-around mt-5 align-items-center">
-      <div class="col-lg-5 order-lg-2">
-        <div>
-          <h5 class="title">We don't need your private key!</h5>
-          <p class="lead mt-4 mb-5">
-            We don't need your private key for the payment service because you
-            have full control with the <b>HD Mnemonic Wallet</b> library we have
-            developed for AVAX!
-          </p>
-          <p class="lead mt-4 mb-5">
-            Your password and private key will never leave your device. All
-            processes are carried out on your device.
-          </p>
+
         </div>
       </div>
       <div class="col-lg-4 order-lg-1">
@@ -81,8 +68,8 @@
             Payout
           </h5>
           <p class="lead my-4">
-            <b>Avaxchain Payout</b> is designed to let your customers deliver
-            their payments to you without any problems.
+            <b>Avaxchain Payout</b> is designed to let your orders
+            fly.
           </p>
         </div>
       </div>
@@ -94,6 +81,15 @@
         />
       </div>
     </div>
+    <div data-v-02792da4=""><h5 data-v-02792da4="" class="title">
+          Avalanche live api playground
+        </h5><p data-v-02792da4="" class="lead my-4">
+          Spam the AVAX network with api
+          requests till it somebody passes out.
+        </p></div>
+
+<div data-v-02792da4="" class="col-md-8"><embed data-v-02792da4="" src="https://graphql.avascan.info/" style="width: 100%; height: 37.7vw;"></div>
+
     <footer class="footer footer-light pt-0">
       <div class="container">
         <div
@@ -103,10 +99,10 @@
             <div
               class="copyright text-sm font-weight-bold text-center text-md-left"
             >
-              © 2020 Avaxchain - Developed by
-              <a href="https://avaxchain.com" target="_blank">DegnFi</a>
+              © 2020 Avaxchain - Forkeloped by
+              <a href="https://avaxchain.com" target="_blank">DegFi</a>
             </div>
-            <small>avaxchain is not affiliated with Avalabs.</small>
+            <small>all credits to avalabs.org, avamatic.com and avascan.info.</small>
           </div>
           <div class="col-md-6">
             <ul

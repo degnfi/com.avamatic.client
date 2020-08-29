@@ -40,6 +40,7 @@
           <p class="lead my-4">
             Avaxchain Paygate is built to send/receive payments for all
             all assets on AVAX.
+            And you can create custom assets within seconds.
           </p>
         </div>
       </div>

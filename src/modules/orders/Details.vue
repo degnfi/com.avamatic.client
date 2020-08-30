@@ -206,7 +206,7 @@ export default {
 
         let assetid = this.details.asset_id;
         if (this.details.asset_id == "AVAX") {
-          assetid = "21d7KVtPrubc5fHr6CGNcgbUb4seUjmZKr35ZX7BZb5iP8pXWA";
+          assetid = "nznftJBicce1PfWQeNEVBmDyweZZ6zcM3p78z9Hy9Hhdhfaxm";
         }
 
         this.$ava.getAssetDescription(assetid).then(async (asset_detail) => {

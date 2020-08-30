@@ -196,7 +196,7 @@ export default {
       this.mnemonic = AvaHDWallet.generateMnemonic(); // -> "nation profit giant truth meat carpet demand expect nest sudden endorse ahead"
       const wallet = AvaHDWallet.fromMnemonic(this.mnemonic);
 
-      let keychain = this.avm.keyChain();
+      let keychain = this.xchain.keyChain();
 
       let bintools = avalanche.BinTools.getInstance();
 

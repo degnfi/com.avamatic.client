@@ -194,7 +194,7 @@ export default {
     },
     async transfer() {
       try {
-        let myKeychain = this.$ava.keyChain();
+      let myKeychain = xchain.keyChain();
         const importExternal = myKeychain.importKey(
           this.payment_account.privateKey
         );

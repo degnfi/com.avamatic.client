@@ -45,7 +45,6 @@
 <script>
 import BN from "bn.js";
 import EventBus from "@/event_bus";
-
 export default {
   data() {
     return {
@@ -64,14 +63,12 @@ export default {
         let wallet = JSON.parse(this.$store.getters.SEND_WALLET);
         let myKeychain = this.$ava.keyChain();
         const importExternal = myKeychain.importKey(wallet.secret_key);
-
         myKeychain.getKey(importExternal);
         let myAddresses = this.$ava.keyChain().getAddresses();
         let addressStrings = this.$ava.keyChain().getAddressStrings();
         let utxos = await this.$ava.getUTXOs(myAddresses);
-
         let assetid = this.asset.asset;
-        if (this.asset.asset == "AVAX") {
+        if (this.asset.asset == "AVA") {
           assetid = "nznftJBicce1PfWQeNEVBmDyweZZ6zcM3p78z9Hy9Hhdhfaxm";
         }
         console.log(this.asset.denomination)
@@ -79,9 +76,7 @@ export default {
         let sendAmount = new BN(
           this.amount * Math.pow(10, this.asset.denomination)
         );
-
         console.log(sendAmount)
-
         let friendsAddress = this.destination;
         let unsignedTx = await this.$ava.buildBaseTx(
           utxos,
@@ -101,13 +96,10 @@ export default {
             text: "Successfuly done!",
             type: "alert-success",
           });
-
           // update account
           EventBus.$emit("update_assets");
-
           this.destination = null;
           this.amount = null;
-
           // close modal and reset inputs
           document.getElementById("withdrawModal").click();
         } else {

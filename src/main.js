@@ -30,7 +30,6 @@ let ava = new avalanche.Avalanche(
   myNetworkID,
   myBlockchainID
 );
-let xchain = ava.XChain(); //returns a reference to the XChain used by Avalanche.js
 Vue.prototype.$ava = ava.XChain();
 
 new Vue({

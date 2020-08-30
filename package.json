@@ -8,8 +8,8 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "ava-hd-wallet": "^1.0.9",
-    "avalanche": "^2.0.1",
+    "ava-hd-wallet": "^1.1.0",
+    "avalanche": "^2.4.3",
     "axios": "^0.19.2",
     "core-js": "^2.6.5",
     "crypto-js": "^4.0.0",

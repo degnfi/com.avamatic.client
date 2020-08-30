@@ -189,7 +189,7 @@ export default {
         this.$store.commit("UPDATE_ASSETS_EMPTY");
         let assets = response;
         assets.forEach((asset, index) => {
-          if (asset.asset == "AVA") {
+          if (asset.asset == "AVAX") {
             this.native_asset.name = asset.asset;
             this.native_asset.asset = asset.asset;
             this.native_asset.symbol = asset.asset;

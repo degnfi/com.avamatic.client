@@ -18,7 +18,7 @@ Vue.use(VueClipboard);
 Vue.use(Vuelocalstorage);
 Vue.use(avalanche)
 
-axios.defaults.baseURL = "https://api.avamatic.com/";
+axios.defaults.baseURL = "https://testapi.avax.network:443";
 // axios.defaults.baseURL = "http://localhost:5050/";
 
 let myNetworkID = 3;
@@ -30,7 +30,7 @@ let ava = new avalanche.Avalanche(
   myNetworkID,
   myBlockchainID
 );
-Vue.prototype.$ava = ava.XChain();
+Vue.prototype.$ava = ava.AVM();
 
 new Vue({
   router,

@@ -186,7 +186,7 @@ export default {
     };
   },
   created() {
-    this.avm = this.$ava
+    this.xchain = this.$ava
 
     this.username = uuidv4();
     this.generate_wallet();

@@ -101,7 +101,7 @@ export default {
     };
   },
   created() {
-    this.avm = this.$ava
+    this.xchain = this.$ava
   },
   methods: {
     login() {

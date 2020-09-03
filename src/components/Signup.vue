@@ -8,7 +8,7 @@
           style="font-size:35px"
         >
           <span class="text-center"
-            ><i class="fad fa-spinner"></i> Avamatic</span
+            ><i class="fad fa-mountain"></i> Avaxchain</span
           >
         </router-link>
         <div class="row justify-content-center mb-5">
@@ -186,7 +186,7 @@ export default {
     };
   },
   created() {
-    this.avm = this.$ava
+    this.xchain = this.$ava
 
     this.username = uuidv4();
     this.generate_wallet();
@@ -196,7 +196,7 @@ export default {
       this.mnemonic = AvaHDWallet.generateMnemonic(); // -> "nation profit giant truth meat carpet demand expect nest sudden endorse ahead"
       const wallet = AvaHDWallet.fromMnemonic(this.mnemonic);
 
-      let keychain = this.avm.keyChain();
+      let keychain = this.xchain.keyChain();
 
       let bintools = avalanche.BinTools.getInstance();
 

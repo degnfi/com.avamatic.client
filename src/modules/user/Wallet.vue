@@ -17,7 +17,7 @@
         >
           <div class="actions actions-dark d-inline-block">
             <router-link to="/wallet/create" class="action-item ml-md-4">
-              <i class="far fa-plus mr-2"></i>Create an asset on AVA
+              <i class="far fa-plus mr-2"></i>Create an asset on AVAX
             </router-link>
           </div>
         </div>
@@ -45,7 +45,7 @@
                   />
                   <div class="media-body ml-3">
                     <span style="font-size:15px;color:#000"
-                      >AVA - <span style="color:#696969">AVA</span></span
+                      >AVAX - <span style="color:#696969">AVAX</span></span
                     >
                   </div>
                 </div>
@@ -189,7 +189,7 @@ export default {
         this.$store.commit("UPDATE_ASSETS_EMPTY");
         let assets = response;
         assets.forEach((asset, index) => {
-          if (asset.asset == "AVA") {
+          if (asset.asset == "AVAX") {
             this.native_asset.name = asset.asset;
             this.native_asset.asset = asset.asset;
             this.native_asset.symbol = asset.asset;

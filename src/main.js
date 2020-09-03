@@ -30,7 +30,7 @@ let ava = new avalanche.Avalanche(
   myNetworkID,
   myBlockchainID
 );
-Vue.prototype.$ava = ava.AVM();
+Vue.prototype.$ava = ava.XChain();
 
 new Vue({
   router,

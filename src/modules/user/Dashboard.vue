@@ -48,14 +48,9 @@
             </tr>
           </tbody>
         </table>
-        </div>
+      </div>
     </div>
   </div>
-  <embed data-v-62448b22="" src="https://degnfi.github.io/avascan/" style="width: 100%; height: 33.7vw;">
-  </div>
-</div>
-</div>
-
 </template>
 
 <script>

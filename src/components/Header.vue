@@ -129,7 +129,7 @@ export default {
       this.$avax
         .getBalance(
           wallet.public_key,
-          "21d7KVtPrubc5fHr6CGNcgbUb4seUjmZKr35ZX7BZb5iP8pXWA"
+          "nznftJBicce1PfWQeNEVBmDyweZZ6zcM3p78z9Hy9Hhdhfaxm"
         )
         .then((response) => {
           this.$store.commit("UPDATE_ACCOUNT", response.words[0]);

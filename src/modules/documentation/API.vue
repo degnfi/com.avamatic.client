@@ -5,7 +5,7 @@
       class="logo d-none d-sm-block text-center mb-5 text-white"
       style="font-size:35px"
     >
-      <span class="text-center"><i class="fad fa-spinner"></i> Avamatic</span
+      <span class="text-center"><i class="fad fa-mountain"></i> Avaxchain</span
       ><small class="ml-2">/api</small>
     </router-link>
     <div class="card" style="padding:50px">
@@ -34,7 +34,7 @@
     $ REDIRECT | http://avamatic.com/checkout/<b>[ORDER_ID]</b></pre>
         <hr/>
         <h2 class="mb-4">Accessing to payment wallets</h2>
-        <p>Every order which are belongs to a merchant account has unique derivation paths. You can access your receiving payment addresses via <b>AVA HD Wallet library</b> or via <b>Orders</b> section in your Avamatic account and can withdraw it.</p>
+        <p>Every order which are belongs to a merchant account has unique derivation paths. You can access your receiving payment addresses via <b>AVA HD Wallet library</b> or via <b>Orders</b> section in your Avaxchain account and can withdraw it.</p>
         <p>Derivation path : <b>m/[merchant_account_id]/[order_index]</b></p>
         
         <hr/>

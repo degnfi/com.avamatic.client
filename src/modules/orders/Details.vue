@@ -101,12 +101,12 @@
       </label>
       <p>
         <small
-          >Avamatic generates payment addresses via xPub that you provide, and
+          >Avaxchain generates payment addresses via xPub that you provide, and
           each of these payment addresses has a unique public key and private
           key. Each address is used for only one payment. Here you are presented
           with the information you need to manage the address of the current
           order. If you wish, you can transfer the payment wallet to your
-          current Avamatic account you are using.
+          current Avaxchain account you are using.
         </small>
       </p>
       <div
@@ -144,7 +144,7 @@
           v-if="details.is_paid"
           @click="transfer()"
         >
-          Transfer all received amount to my Avamatic account
+          Transfer all received amount to my Avaxchain account
         </button>
       </div>
     </div>
@@ -194,7 +194,7 @@ export default {
     },
     async transfer() {
       try {
-        let myKeychain = this.$ava.keyChain();
+      let myKeychain = this.$ava.keyChain();
         const importExternal = myKeychain.importKey(
           this.payment_account.privateKey
         );
@@ -205,8 +205,8 @@ export default {
         let utxos = await this.$ava.getUTXOs(myAddresses);
 
         let assetid = this.details.asset_id;
-        if (this.details.asset_id == "AVA") {
-          assetid = "21d7KVtPrubc5fHr6CGNcgbUb4seUjmZKr35ZX7BZb5iP8pXWA";
+        if (this.details.asset_id == "AVAX") {
+          assetid = "nznftJBicce1PfWQeNEVBmDyweZZ6zcM3p78z9Hy9Hhdhfaxm";
         }
 
         this.$ava.getAssetDescription(assetid).then(async (asset_detail) => {

@@ -5,7 +5,7 @@
       class="logo d-none d-sm-block text-center text-white"
       style="font-size:35px"
     >
-      <span class="text-center"><i class="fad fa-mountain"></i> Avaxchain</span>
+      <span class="text-center"><i class="fad fa-spinner"></i> Avamatic</span>
     </router-link>
     <div class="card card-body align-center col-md-6">
       <div class="mb-3">
@@ -15,7 +15,7 @@
       </div>
       <div class="mb-3">
        <span class="badge badge-pill badge-success" style="font-size:17px"
-          >0.000001 AVAX</span
+          >0.000001 AVA</span
         >
       </div>
       <div class="row">

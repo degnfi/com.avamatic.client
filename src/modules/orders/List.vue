@@ -64,7 +64,7 @@
                       new Date(order.createdAt).getTime() + 1000 * 60 * 30 >
                         new Date().getTime()
                   "
-                  ><i class="fad fa-mountain"></i> Pending</span
+                  ><i class="fad fa-spinner"></i> Pending</span
                 >
                 <span class="text-danger" v-else
                   ><i class="fad fa-times"></i> Failed</span

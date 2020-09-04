@@ -77,7 +77,7 @@ export default {
         console.log(this.asset.denomination)
         console.log(this.amount)
         let sendAmount = new BN(
-          this.amount * Math.pow(10, this.asset.denomination)
+          this.amount * Math.pow(10,asset.denomination)
         );
 
         console.log(sendAmount)

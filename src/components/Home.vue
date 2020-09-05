@@ -10,7 +10,7 @@
     <div class="row justify-content-around mt-2 align-items-center">
       <div class="col-lg-6 pt-lg-4 text-center">
         <h1 class="display-4 text-white mb-4">
-          Paygate and $Avax wallet
+          Awaxgate  wallet
         </h1>
         <router-link
           to="/login"

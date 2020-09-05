@@ -22,12 +22,6 @@ axios.defaults.baseURL = "https://api.avamatic.com/";
 // axios.defaults.baseURL = "http://localhost:5050/";
 
 
-import {
-    
-    BinTools,
-    Buffer,
-    BN
-  } from "avalanche"
 let bintools = BinTools.getInstance();
 let myNetworkID = 12345; //default is 3, we want to override that for our local network
 let myBlockchainID = "X"; // The XChain blockchainID on this network

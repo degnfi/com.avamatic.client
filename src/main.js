@@ -12,7 +12,7 @@ import {
     BinTools,
     Buffer,
     BN
-  } from "avalanche"
+  } from "avalanche";
 
 const Avalanche  = require("avalanche");
 

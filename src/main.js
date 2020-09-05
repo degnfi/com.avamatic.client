@@ -7,6 +7,13 @@ import VueClipboard from "vue-clipboard2";
 import Vuelocalstorage from "vue-localstorage";
 import store from "./store"
 import router from './router'
+import {
+    Avalanche,
+    BinTools,
+    Buffer,
+    BN
+  } from "avalanche"
+
 const Avalanche  = require("avalanche");
 
 Vue.config.productionTip = false
@@ -23,7 +30,7 @@ axios.defaults.baseURL = "https://api.avamatic.com/";
 
 
 let bintools = BinTools.getInstance();
-let myNetworkID = 12345; //default is 3, we want to override that for our local network
+let myNetworkID = 3; //default is 3, we want to override that for our local network
 let myBlockchainID = "X"; // The XChain blockchainID on this network
 let ava = new avalanche.Avalanche("testapi.avax.network", 443, "https", myNetworkID, myBlockchainID);
 let xchain = ava.XChain(); //returns a reference to the XChain used by Avalanche.js

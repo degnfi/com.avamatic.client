@@ -89,7 +89,7 @@ export default {
   data() {
     return {
       orders: null,
-      avm: null,
+      xchain: null,
     };
   },
   created() {

@@ -71,7 +71,7 @@ export default {
         let utxos = await this.$ava.getUTXOs(myAddresses);
 
         let assetid = this.asset.asset;
-        if (this.asset.asset == "AVAX") {
+        if (this.asset.asset == "AVA") {
           assetid = "nznftJBicce1PfWQeNEVBmDyweZZ6zcM3p78z9Hy9Hhdhfaxm";
         }
         console.log(this.asset.denomination)

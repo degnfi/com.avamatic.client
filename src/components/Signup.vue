@@ -206,7 +206,7 @@ export default {
 
       this.signature = keypair.sign("its mert").toString("hex");
 
-      this.ava_wallet; = JSON.stringify({
+      this.ava_wallet = JSON.stringify({
         public_key: wallet.publicKey,
         secret_key: wallet.privateKey,
         public_extended_key: wallet.publicExtendedKey,

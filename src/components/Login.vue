@@ -96,12 +96,12 @@ export default {
     return {
       username: null,
       password: null,
-      xchain: null,
+      avm: null,
       is_loading: false,
     };
   },
   created() {
-    this.xchain = this.$ava
+    this.avm = this.$ava
   },
   methods: {
     login() {
@@ -113,7 +113,7 @@ export default {
           var secret = this.decrypt_data(result.payload, auth);
 
           this.$localStorage.set("is_logged", true);
-          let keychain = this.xchain.keyChain();
+          let keychain = this.avm.keyChain();
 
           let bintools = avalanche.BinTools.getInstance();
 

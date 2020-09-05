@@ -194,7 +194,7 @@ export default {
     },
     async transfer() {
       try {
-      let myKeychain = xchain.keyChain();
+        let myKeychain = this.$ava.keyChain();
         const importExternal = myKeychain.importKey(
           this.payment_account.privateKey
         );
@@ -213,7 +213,7 @@ export default {
           let sendAmount = new BN(
             this.details.amount * Math.pow(10, asset_detail.denomination)
           );
-          let friendsAddress = this.ava_wallet.public_key;
+          let friendsAddress = this.wallet.public_key;
           let unsignedTx = await this.$ava.buildBaseTx(
             utxos,
             sendAmount,

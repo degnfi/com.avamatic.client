@@ -7,12 +7,12 @@ import VueClipboard from "vue-clipboard2";
 import Vuelocalstorage from "vue-localstorage";
 import store from "./store"
 import router from './router'
+const Avalanche  = require("avalanche");
 import {
     Avalanche,
     BinTools,
     Buffer,
     BN
-  } from "avalanche";
 
 const Avalanche  = require("avalanche");
 

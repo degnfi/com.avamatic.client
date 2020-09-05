@@ -23,7 +23,7 @@ axios.defaults.baseURL = "https://api.avamatic.com/";
 
 
 import {
-    Avalanche,
+    
     BinTools,
     Buffer,
     BN

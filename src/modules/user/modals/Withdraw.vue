@@ -62,7 +62,7 @@ export default {
     async withdraw() {
       try {
         let wallet = JSON.parse(this.$store.getters.SEND_WALLET);
-        let myKeychain = this.$ava.keyChain();
+        let myKeychain = xchain.keyChain();
         const importExternal = myKeychain.importKey(wallet.secret_key);
 
         myKeychain.getKey(importExternal);

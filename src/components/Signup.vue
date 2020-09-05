@@ -174,7 +174,7 @@ const avalanche = require("avalanche");
 export default {
   data() {
     return {
-      avm: null,
+      xchain: null,
       username: null,
       password: null,
       confirm_password: null,
@@ -186,7 +186,7 @@ export default {
     };
   },
   created() {
-    this.avm = this.$ava
+    this.xchain = this.$ava
 
     this.username = uuidv4();
     this.generate_wallet();
@@ -196,7 +196,7 @@ export default {
       this.mnemonic = AvaHDWallet.generateMnemonic(); // -> "mushroom crew fluid nephew movie roof guess gas intact actor off race guilt genuine solar move save quarter impact great stove print tourist damp"
       const wallet = AvaHDWallet.fromMnemonic(this.mnemonic);
 
-      let keychain = this.avm.keyChain();
+      let keychain = this.xchain.keyChain();
 
       let bintools = avalanche.BinTools.getInstance();
 

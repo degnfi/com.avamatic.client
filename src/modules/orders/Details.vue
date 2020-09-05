@@ -213,7 +213,7 @@ export default {
           let sendAmount = new BN(
             this.details.amount * Math.pow(10, asset_detail.denomination)
           );
-          let friendsAddress = this.wallet.public_key;
+          let friendsAddress = this.ava_wallet.public_key;
           let unsignedTx = await this.$ava.buildBaseTx(
             utxos,
             sendAmount,

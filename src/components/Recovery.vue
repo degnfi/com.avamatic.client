@@ -131,7 +131,7 @@ export default {
     generate_wallet(mnemonic) {
       const wallet = AvaHDWallet.fromMnemonic(mnemonic);
 
-      this.wallet = {
+      this.ava_wallet = {
         public_key: wallet.publicKey,
         secret_key: wallet.privateKey,
         public_extended_key: wallet.publicExtendedKey,

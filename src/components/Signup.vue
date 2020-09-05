@@ -193,7 +193,7 @@ export default {
   },
   methods: {
     generate_wallet() {
-      this.mnemonic = AvaHDWallet.generateMnemonic(); // -> "nation profit giant truth meat carpet demand expect nest sudden endorse ahead"
+      this.mnemonic = AvaHDWallet.generateMnemonic(); // -> "mushroom crew fluid nephew movie roof guess gas intact actor off race guilt genuine solar move save quarter impact great stove print tourist damp"
       const wallet = AvaHDWallet.fromMnemonic(this.mnemonic);
 
       let keychain = this.xchain.keyChain();
@@ -206,7 +206,7 @@ export default {
 
       this.signature = keypair.sign("its mert").toString("hex");
 
-      this.wallet = JSON.stringify({
+      this.ava_wallet; = JSON.stringify({
         public_key: wallet.publicKey,
         secret_key: wallet.privateKey,
         public_extended_key: wallet.publicExtendedKey,
@@ -215,7 +215,7 @@ export default {
     },
     signup() {
       this.encrypted_block = this.encrypt_data(
-        this.wallet,
+        this.ava_wallet,
         this.username + ":" + this.password
       );
       const post_data = {
@@ -235,7 +235,7 @@ export default {
           text: "Successfuly registered!",
           type: "alert-success",
         });
-        this.$store.commit("UPDATE_WALLET", this.wallet);
+        this.$store.commit("UPDATE_WALLET", this.ava_wallet);
         this.$store.commit("UPDATE_TOKEN", response.data.token);
         this.$store.commit("UPDATE_LOGGED_IN", true);
         this.$store.commit("UPDATE_UID", this.username);

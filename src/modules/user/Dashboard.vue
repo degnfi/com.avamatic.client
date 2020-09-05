@@ -73,7 +73,7 @@ export default {
     fetch_transactions() {
       this.is_loading = true;
 
-      var addressWithoutChainTag = this.wallet.public_key;
+      var addressWithoutChainTag = this.ava_wallet.public_key;
       addressWithoutChainTag = addressWithoutChainTag.substring(
         addressWithoutChainTag.indexOf("-") + 1
       );

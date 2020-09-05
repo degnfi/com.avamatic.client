@@ -9,12 +9,10 @@ import store from "./store"
 import router from './router'
 const Avalanche  = require("avalanche");
 import {
-    Avalanche,
     BinTools,
     Buffer,
     BN
-
-const Avalanche  = require("avalanche");
+  } from "avalanche"
 
 Vue.config.productionTip = false
 VueClipboard.config.autoSetContainer = true

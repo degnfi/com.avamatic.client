@@ -21,19 +21,18 @@ Vue.use(VueAxios, axios);
 Vue.use(Notifications);
 Vue.use(VueClipboard);
 Vue.use(Vuelocalstorage);
-Vue.use(avalanche)
+Vue.use(Avalanche)
 
 axios.defaults.baseURL = "https://api.avamatic.com/";
 // axios.defaults.baseURL = "http://localhost:5050/";
 
 
-let bintools = BinTools.getInstance();
 let myNetworkID = 3; //default is 3, we want to override that for our local network
 let myBlockchainID = "X"; // The XChain blockchainID on this network
-let avax = new avalanche.Avalanche("testapi.avax.network", 443, "https", myNetworkID, myBlockchainID);
-let xchain = ava.XChain(); //returns a reference to the XChain used by Avalanche.js
+let ava = new Avalanche.Avalanche("testapi.avax.network", 443, "https", myNetworkID, myBlockchainID);
+let Xchain = ava.XChain(); //returns a reference to the XChain used by Avalanche.js
 
-Vue.prototype.$ava = ava.XChain();
+Vue.prototype.$ava = ava.AVM();
 
 new Vue({
   router,
